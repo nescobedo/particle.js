@@ -1,0 +1,38 @@
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 800px;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+pre {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  overflow-y: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  background: #efefef;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 2;
+  // tab-size: 2;
+}
+pre code {
+  font-family: Courier, 'New Courier', monospace;
+  font-size: 12px;
+  padding: 10px;
+  color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 40px;
+  margin-bottom: 1rem;
+}

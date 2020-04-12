@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript: Convert a .csv file into a objects array</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Javascript: Convert a .csv file into a objects array</h1>
+      <p>
+        My first code test consisted of converting a .csv file data into
+        objects. I froze. I kept on trying to figure it out by looking up
+        individual methods instead of just looking up a solution - which was ok
+        since it was an open test.
+      </p>
+      <p>
+        I knew it involved nested loops (my nemesis!) but I had hard time
+        comprehending table structure in a string and vowed not to let that
+        happen again. This is where I learned to do it at my own pace.
+      </p>
+
+      <div class="row">
+        <div class="col-sm">
+          <h5>Contents of sample CSV file:</h5>
+          <pre>
+              <code>
+    Name,Age,Height,Description<br />
+    Bubba,35,5.5,Happy<br />
+    Mary ,23,5.2,Bubbly<br />
+    Donald,46,5.8,Tired<br />
+    Chuck,40,6.2,Tall
+              </code>
+            </pre>
+        </div>
+
+        <div class="col-sm">
+          <h5>Expected Output:</h5>
+          <pre>
+            <code>
+    [
+      {
+        "Name": "Bubba",
+        "Age": "35",
+        "Height": "5.5",
+        "Description": "Happy"
+      },
+      {
+        "Name": "Marry ",
+        "Age": "23",
+        "Height": "5.2",
+        "Description": "Freaky"
+      },
+      {
+        "Name": "Donald",
+        "Age": "46",
+        "Height": "5.8",
+        "Description": "Creep"
+      },
+      {
+        "Name": "Chuck",
+        "Age": "40",
+        "Height": "6.2",
+        "Description": "Hero"
+      }
+    ]
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <h3>Solution</h3>
+      <ul>
+        <li>
+          First step is to create the empty array which will hold the final
+          objects.
+        </li>
+        <li>
+          Break the data into rows by splitting by new lines or returns (\r \n)
+        </li>
+        <li>
+          Next, store the column "headers" which will be repeated as keys in
+          each object. This is done by creating a variable (columns) which
+          stores an array created by splitting the first row by commas.
+        </li>
+        <li>
+          Start the outer loop based on the remaining rows. Notice that the loop
+          counter starts at 1 to exclude the column "headers" data.
+        </li>
+        <li>
+          For each row in the loop we will split values by comma into an array
+        </li>
+        <li>
+          Create a temporary object{} to store values created in the inner loop
+        </li>
+        <li>
+          Begin the inner loop which is determined by number of values per row.
+        </li>
+        <li>
+          Assign the key/value pairs to the temporary object - this was the
+          tricky part, making sure to call on the correct value and index.
+        </li>
+        <li>
+          Upon exiting the inner loop, push the temporary object to the results
+          array.
+        </li>
+      </ul>
+
+      <script src="https://gist.github.com/nescobedo/511cd6dcf4a2e931617a34f251348888.js"></script>
+      <p></p>
+      <p>You can view the console to see the results returned.</p>
+      <p>Thanks for stopping by, I hope this helps someone else.</p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
