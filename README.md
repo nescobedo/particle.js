@@ -2,11 +2,9 @@
 
 My solution to creating an array of objects from CSV table/text data.
 
-Also a working gulp4 repo utilizing Browser-sync, Bootstrap 4 and Babel (es2015)
+It's also a working Node.js environment utilizing Gulp 4, Browsersync, Bootstrap 4, Babel, Sass, css/js minification, and sourcemaps.
 
 ## How to get started?
-
-<ol>
 
 1. Clone this repo
 2. yarn or npm install to install the required dependencies
