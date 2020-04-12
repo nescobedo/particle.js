@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Javascript: Convert a .csv file into a objects array</title>
+    <title>Javascript: Convert a .csv file into an objects array</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Javascript: Convert a .csv file into a objects array</h1>
+      <h1>Javascript: Convert a .csv file into an objects array</h1>
       <p>
         My first code test consisted of converting a .csv file data into
         objects. I froze. I kept on trying to figure it out by looking up
@@ -79,33 +79,36 @@
       <h3>Solution</h3>
       <ul>
         <li>
-          First step is to create the empty array which will hold the final
-          objects.
+          Create the empty array that will hold the final objects.
         </li>
         <li>
-          Break the data into rows by splitting by new lines or returns (\r \n)
+          Break the data into rows by splitting by returns(\r) or new lines
+          (\n).
         </li>
         <li>
-          Next, store the column "headers" which will be repeated as keys in
-          each object. This is done by creating a variable (columns) which
-          stores an array created by splitting the first row by commas.
+          Store the column "headers" which will be repeated as keys in each
+          object. This is done by creating a variable (columns) which stores an
+          array created by splitting the first row by commas.
         </li>
         <li>
           Start the outer loop based on the remaining rows. Notice that the loop
-          counter starts at 1 to exclude the column "headers" data.
+          counter starts at 1 to exclude the existing column "headers" data.
         </li>
         <li>
-          For each row in the loop we will split values by comma into an array
+          For each row in the loop we will split the values by comma into an
+          array (row[])
         </li>
         <li>
-          Create a temporary object{} to store values created in the inner loop
+          Create a temporary object(tempObj{}) to store values created in the
+          inner loop
         </li>
         <li>
           Begin the inner loop which is determined by number of values per row.
         </li>
         <li>
-          Assign the key/value pairs to the temporary object - this was the
-          tricky part, making sure to call on the correct value and index.
+          Assign the key/value pairs to the temporary object. This was where I
+          got stuck in the test, making sure to call on the correct value and
+          index.
         </li>
         <li>
           Upon exiting the inner loop, push the temporary object to the results
