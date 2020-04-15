@@ -2,6 +2,8 @@
 
 Learn some cool effects by using Vincent Garreau's Particle.js library.  
 
+Visit his site to create the particle effects you want and easily add them to your site. So many options - custom images, speed, effects, I can't get enough of this library.  
+
 These are particle effects that I use on my portfolio website. At the top of the homepage I use the pixel effect.  I use the butterfly effect on the slide out navigation sidebars.  On the site I alter the sidebar background colors per section for a smoother interaction.  I love particle effects but also know that too much movement is distracting.  Find a way to use particles for your clients - an easy one is background snow for holiday events.  
 
 My dba/website name is Future Butterfles after a line from an Elliott Smith song.  I use that title as metaphor for what I hope to do with your existing website - make it into something beautiful.
