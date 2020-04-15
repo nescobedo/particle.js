@@ -1,6 +1,10 @@
 // VENDOR
 @import 'custom_bootstrap';
 @import 'custom_mixins';
+@import '../sass/ceaser-easings';
+@import 'custom_variables';
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Signika:300,400,600,700&subset=latin-ext');
 
 // GLOBAL STYLES
 @import 'global';
@@ -12,3 +16,4 @@
 
 // PAGES
 // @import "pages/homepage";
+

@@ -1,8 +1,23 @@
-# create_objects_from_csv
+# Particle.js - Chasing Butterflies
 
-My solution to creating an array of objects from CSV table/text data.
+Learn some cool effects by using Vincent Garreau's Particle.js library.  
 
-It's also a working Node.js environment utilizing Gulp 4, Browsersync, Bootstrap 4, Babel, Sass, css/js minification, and sourcemaps.
+These are particle effects that I use on my portfolio website. At the top of the homepage I use the pixel effect.  I use the butterfly effect on the slide out navigation sidebars.  On the site I alter the sidebar background colors per section for a smoother interaction.  I love particle effects but also know that too much movement is distracting.  Find a way to use particles for your clients - an easy one is background snow for holiday events.  
+
+My dba/website name is Future Butterfles after a line from an Elliott Smith song.  I use that title as metaphor for what I hope to do with your existing website - make it into something beautiful.
+
+This is a working Node.js environment utilizing Gulp 4, Browsersync, Bootstrap 4, Babel, Sass, css/js minification, and sourcemaps.
+
+Credit also to Joe Vains BeerSlider to allow me to show both effects on one page.  
+
+CREDITS //
+
+https://vincentgarreau.com/particles.js/ - Particle.js by Vincent Garreau
+
+https://github.com/pehaa/beerslider - Credit to Joe Vains BEfore/AftER Slider (BeerSlider)
+
+https://futurebutterflies.com - live production site.
+
 
 ## How to get started?
 

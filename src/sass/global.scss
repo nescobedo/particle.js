@@ -1,38 +1,143 @@
-.container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  max-width: 800px;
-}
-
-p {
-  margin-bottom: 2rem;
-}
-
-pre {
+html, body {
   width: 100%;
-  padding: 0;
-  margin: 0;
-  overflow: auto;
-  overflow-y: hidden;
-  font-size: 12px;
-  line-height: 20px;
-  background: #efefef;
-  border: 1px solid rgb(211, 211, 211);
-  border-radius: 2;
-  // tab-size: 2;
+  height: 100%;
 }
-pre code {
-  font-family: Courier, 'New Courier', monospace;
-  font-size: 12px;
-  padding: 10px;
-  color: #333;
+
+.nav-header {
+  background: rgba(#000,.5);
+  padding: 20px 20px;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 100;
+  @include media-breakpoint-up(xl) {
+    padding: 30px 31px;
+  }
+
+  .logo {
+    width:160px;
+    @include media-breakpoint-up(xl) {
+      width: 200px;
+    }
+  }
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 40px;
-  margin-bottom: 1rem;
+
+#Container {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: all 0.3s;
+  box-shadow: inset 5px 1px 8px 0 rgba(#000,.12);
+  flex: 1;
+  font-family: $headings-font-family;
+  display:flex;
+  flex-direction: column;
+  transition: right .25s $easeOutCubic;
+
+  
+  #particle-pixel-logic {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #C63D0F;
+  }
+
+  #particle-nav-butterflies {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    // background: #899639;
+    // #page_home
+    // background: #222222;
+    // #page_about 
+    // background: linear-gradient(-180deg, $fb-green 50%, darken( $fb-green, 25% ));
+    // #page_portfolio
+    // background: linear-gradient(-180deg, $fb-orange 50%,darken( $fb-orange, 25% ));
+    // #page_contact 
+    background: linear-gradient(-180deg, $fb-blue 50%, darken( $fb-blue, 25% ));
+    
+    .particles-js-canvas-el {
+      cursor: url(../img/butterfly-net.svg), auto;
+      #page_home & {
+        cursor: auto;
+      }
+    }  
+  }  
+}
+
+.fb-badge {
+  position: fixed;
+  z-index: 1999;
+  top: 0;
+  left: 3%;
+  width: 70px;
+  transition: all 1.5s linear;
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    animation: none;
+    transition: none;
+  }
+  a {
+    display: block;
+    transition: all 1.85s $easeOutCirc;
+    &:hover {
+      transform: scale(1.015);
+      .st0 {
+        stroke: rgba(255, 255, 255, 0.4);
+      }
+      #fb {
+        fill-opacity: 0;
+        stroke: rgba(255, 255, 255, 0.85);
+      }
+    }
+  }
+  #fb-ghost {
+    fill: #fff;
+    fill-opacity: 0.11;
+    transition: opacity 0.5s ease-out, scale 0.3s linear;
+  }
+  #fb {
+    fill: #fff;
+    fill-opacity: 0.3;
+    stroke: rgba(#fff, 0.5);
+    stroke-width: 1;
+    stroke-dasharray: 550;
+    stroke-dashoffset: 0;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      /* IE10+ CSS styles go here */
+      animation: none;
+      fill-opacity: 0.3;
+      stroke-dashoffset: 0;
+      stroke: rgba(#fff, 0.8);
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    width: 80px;
+  }
+  @include media-breakpoint-up(md) {
+    left: auto;
+    right: 270px;
+  }
+  @include media-breakpoint-up(lg) {
+    right: 270px;
+    width: 130px;
+  }
+  @include media-breakpoint-up(xl) {
+    right: 270px;
+    width: 180px;
+  }
+  @include media-breakpoint-up(xxl) {
+    left: 77%;
+  }
+}
+
+.header-logo {
+  margin-top: 20px;
+  display: inline-block;
+  img {
+    width: 300px;
+  }
 }
