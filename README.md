@@ -15,7 +15,11 @@ My dba/website name is Future Butterfles after a line from an Elliott Smith song
 
 This is a working Node.js environment utilizing Gulp 4, Browsersync, Bootstrap 4, Babel, Sass, css/js minification, and sourcemaps.
 
-Credit also to Joe Vains BeerSlider to allow me to show both effects on one page.  
+Credit to [Joe Vains BeerSlider](https://pepsized.com/beer-slider-responsive-accessible-before-after-slider/) to allow me to show both effects on one page.  
+
+<p align="center">
+  <img src="./screenshots/home.png">
+</p>
 
 ![divider](http://gh-images.futurebutterflies.net/divider.png)
 
