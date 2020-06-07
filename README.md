@@ -1,4 +1,9 @@
-# Particle.js - Chasing Butterflies
+<p align="center">
+  <img src="http://gh-images.futurebutterflies.net/2020_fb.png">
+</p>
+
+<h1 align="center">Particle.js - Chasing Butterflies</h1>
+
 
 Learn some cool effects by using Vincent Garreau's Particle.js library.  
 
@@ -12,14 +17,18 @@ This is a working Node.js environment utilizing Gulp 4, Browsersync, Bootstrap 4
 
 Credit also to Joe Vains BeerSlider to allow me to show both effects on one page.  
 
-CREDITS //
+![divider](http://gh-images.futurebutterflies.net/divider.png)
 
-https://vincentgarreau.com/particles.js/ - Particle.js by Vincent Garreau
 
-https://github.com/pehaa/beerslider - Credit to Joe Vains BEfore/AftER Slider (BeerSlider)
+## ❯ Resources
 
-https://futurebutterflies.com - live production site.
+* https://vincentgarreau.com/particles.js/ - Particle.js by Vincent Garreau
 
+* https://github.com/pehaa/beerslider - Credit to Joe Vains BEfore/AftER Slider (BeerSlider)
+
+* https://futurebutterflies.com - live production site.
+
+![divider](http://gh-images.futurebutterflies.net/divider.png)
 
 ## How to get started?
 
@@ -27,3 +36,5 @@ https://futurebutterflies.com - live production site.
 2. yarn or npm install to install the required dependencies
 3. gulp to kickoff the dev server, and open your browser window.
 4. Edit html files in /public, and sass files in /src/sass or any js files in /src/js. Browser-sync will reload after any changes.
+
+![divider](http://gh-images.futurebutterflies.net/divider.png)
